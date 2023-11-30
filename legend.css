@@ -1,0 +1,20 @@
+/* Add this to your CSS file */
+#legend{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 20px;
+    padding: 20px;
+
+}
+.legend-item {
+    margin-bottom: 5px;
+}
+
+.legend-icon {
+    width: 20px; /* Adjust the size as needed */
+    margin-right: 5px;
+}
+
+.legend-label {
+    font-size: 14px; /* Adjust the font size as needed */
+}

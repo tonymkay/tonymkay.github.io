@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WonderMap V2</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="workspace.css">
+    <link rel="stylesheet" href="tools.css">
+    <link rel="stylesheet" href="legend.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-search/dist/leaflet-search.min.css" />
+    <script src="https://unpkg.com/leaflet-search/dist/leaflet-search.min.js"></script>
+
+    <!-- Include Leaflet Control Geocoder CSS and JavaScript files -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder@1.13.0/dist/Control.Geocoder.css">
+    <script src="https://unpkg.com/leaflet-control-geocoder@1.13.0/dist/Control.Geocoder.js"></script>
+
+    <!-- Leaflet.draw CSS and JavaScript -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.css" />
+    <script src="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.js"></script>
+
+</head>
+<body id="body">
+    <section class="section">
+        <nav class="sidebar">
+            <div class="logo"><img src="images/wmplogo.svg" alt="" width="80px"></div>
+            <button class="side_buttons">&#43; New Map</button>
+            <button class="side_buttons">Projects</button>
+            <button class="side_buttons">&#43; New Map</button>
+            <div class="profile">
+                <img src="images/tony.jpg" alt="">
+                <h5>Antony Murimi</h5>
+            </div>
+        </nav>
+        <div class="wrapper">
+            <div class="tools">
+                <div class="tools_panel">
+                    <button id="toolbutton" onclick="startDrawingPoint()">Draw Point</button>
+                    <button id="toolbutton" onclick="startDrawingTree()">Draw Tree</button>
+                    <button id="toolbutton" onclick="startDrawingHospital()">Draw Hospital</button>
+                    <button id="toolbutton" onclick="startDrawingChurch()">Draw Church</button>
+                    <button id="toolbutton" onclick="startDrawingMosque()">Draw Mosque</button>
+                    <button id="toolbutton" onclick="startDrawingPolice()">Draw Police</button>
+                    <button id="toolbutton" onclick="startDrawingStore()">Draw Store</button>
+                    <button id="toolbutton" onclick="startDrawingAirport()">Draw Airport</button>
+                </div>
+                <div class="tools_panel">
+                    <button id="toolbutton" onclick="startDrawingHighway()">Draw Highway</button>
+                    <button id="toolbutton" onclick="startDrawingRoad()">Draw Road</button>
+                    <button id="toolbutton" onclick="startDrawingTrack()">Draw Track</button>
+                    <button id="toolbutton" onclick="startDrawingRiver()">Draw River</button>
+                    <button id="toolbutton" onclick="startDrawingRailway()">Draw RailWay</button>
+                    <button id="toolbutton" onclick="startDrawingBoundary()">Draw Boundary</button>
+                </div>
+                <div class="tools_panel">
+                    <button id="toolbutton" onclick="startDrawingPolygon()">Draw Polygon</button>
+                </div>
+            </div>
+            <div class="workspace">
+                <div class="title">Name the Map</div>
+                <div id="map"></div>
+            </div>
+            <div id="legend"></div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+    <script src="./draw.js"></script>
+    <script src="./legen.js"></script>
+</body>
+
+</html>
