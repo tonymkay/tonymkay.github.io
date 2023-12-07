@@ -16,7 +16,8 @@ function startDrawingMarker(iconPath) {
 }
 
 function startDrawingPoint() {
-    startDrawingMarker('icons/point.png');
+    startDrawingMarker('icons/marker.png');
+    addLegendItem('icons/marker.png', 'Point');
 }
 
 function startDrawingTree() {

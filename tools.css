@@ -14,12 +14,20 @@
 }
 
 @media screen and (max-width: 500px) and (min-width: 100px) {
-    #toolbutton{
-        background-color: #5864AE;
+    #toolbutton1, #toolbutton2, #toolbutton3 {
         border-style: none;
         border: 1px solid #E7E6F3;
         color: white;
     
+    }
+    #toolbutton1{
+        background-color: #3690c0;
+    }
+    #toolbutton2{
+        background-color: #02818a;
+    }
+    #toolbutton3{
+        background-color: #045a8d;
     }
 }
 
@@ -40,13 +48,21 @@
 }
 
 @media screen and (max-width: 1200px) and (min-width: 500px) {
-    #toolbutton{
-        background-color: #5864AE;
+    #toolbutton1, #toolbutton2, #toolbutton3 {
         border-style: none;
         border: 1px solid #E7E6F3;
         color: white;
         height: 40px;
     
+    }
+    #toolbutton1{
+        background-color: #3690c0;
+    }
+    #toolbutton2{
+        background-color: #02818a;
+    }
+    #toolbutton3{
+        background-color: #045a8d;
     }
 }
 
@@ -71,13 +87,24 @@
 }
 
 @media screen and (max-width: 1600px) and (min-width: 1200px) {
-    #toolbutton{
-        background-color: #5864AE;
-        width: 100px;
+    #toolbutton1, #toolbutton2, #toolbutton3 {
         border-style: none;
         border: 1px solid #E7E6F3;
         color: white;
         height: 40px;
     
     }
+    #toolbutton1{
+        background-color: #3690c0;
+    }
+    #toolbutton2{
+        background-color: #02818a;
+    }
+    #toolbutton3{
+        background-color: #6a51a3;
+    }
+    #toolbutton1:hover, #toolbutton2:hover, #toolbutton3:hover{
+        background-color: rgba(53, 36, 36, 0.788);
+    }
+    
 }

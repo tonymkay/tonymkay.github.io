@@ -1,6 +1,6 @@
 
 .sidebar{
-    background-color: #5864AE;
+    background-color: #08519c;
     width: 200px;
     position: relative;
     left: 0;
@@ -28,18 +28,19 @@
     align-items: center;
     justify-content: center;
     padding-top: 20px;
+    cursor: pointer;
 }
 .logo img{
     width: 60px;
 }
 .side_buttons{
     border: 0;
-    width: 80%;
+    width: 65%;
     padding: 10px;
     margin-top: 20px;
-    height: 60px;
+    height: 40px;
     font-weight: medium;
-    background-color: #5864AE;
+    background-color: transparent;
     color: white;
 
 }
