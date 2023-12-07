@@ -16,25 +16,21 @@
 @media screen and (max-width: 500px) and (min-width: 100px) {
     #toolbutton{
         background-color: #5864AE;
-        width: 50px;
         border-style: none;
         border: 1px solid #E7E6F3;
         color: white;
-        height: 30px;
-        font-size: 5px;
     
     }
 }
 
 
-
-@media screen and (max-width: 1200px) and (min-width: 900px) {
+@media screen and (max-width: 1200px) and (min-width: 500px) {
     .tools {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     }
 }
-@media screen and (max-width: 1200px) and (min-width: 900px) {
+@media screen and (max-width: 1200px) and (min-width: 500px) {
     .tools_panel{
         background-color: #E7E6F3;
         border-left: 1px solid #ffffff;
@@ -43,15 +39,13 @@
     }
 }
 
-@media screen and (max-width: 1200px) and (min-width: 900px) {
+@media screen and (max-width: 1200px) and (min-width: 500px) {
     #toolbutton{
         background-color: #5864AE;
-        width: 50px;
         border-style: none;
         border: 1px solid #E7E6F3;
         color: white;
-        height: 30px;
-        font-size: 5px;
+        height: 40px;
     
     }
 }
@@ -84,7 +78,6 @@
         border: 1px solid #E7E6F3;
         color: white;
         height: 40px;
-        font-size: 10px;
     
     }
 }

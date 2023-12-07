@@ -1,7 +1,7 @@
 
 .sidebar{
     background-color: #5864AE;
-    width: 150px;
+    width: 200px;
     position: relative;
     left: 0;
     top: 0;
@@ -12,9 +12,9 @@
     align-items: center;
     z-index: 20;
 }
-@media screen and (max-width: 1350px) and (min-width: 800px) {
+@media screen and (max-width: 1200px) and (min-width: 800px) {
     .sidebar {
-        width: 75px;
+        width: 100px;
     }
 }
 @media screen and (max-width: 800px) and (min-width: 100px) {

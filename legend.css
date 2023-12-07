@@ -1,9 +1,8 @@
-/* Add this to your CSS file */
 #legend{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 20px;
     padding: 20px;
+    background-color: white;
 
 }
 .legend-item {
@@ -11,10 +10,10 @@
 }
 
 .legend-icon {
-    width: 20px; /* Adjust the size as needed */
+    width: 20px; 
     margin-right: 5px;
 }
 
 .legend-label {
-    font-size: 14px; /* Adjust the font size as needed */
+    font-size: 14px; 
 }

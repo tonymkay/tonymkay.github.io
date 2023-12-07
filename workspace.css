@@ -1,4 +1,4 @@
-@media screen and (max-width: 500px) and (min-width: 100px) {
+@media screen and (max-width: 1600px) and (min-width: 100px) {
     .workspace{
         background-color: white;
         display: grid;
@@ -7,68 +7,7 @@
     }
 }
 
-@media screen and (max-width: 500px) and (min-width: 100px) {
-    .title{
-        background-color: rgb(255, 255, 255);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-
-@media screen and (max-width: 900px) and (min-width: 500px) {
-    .workspace{
-        background-color: white;
-        display: grid;
-        grid-template-rows: 1fr 15fr;
-        z-index: 10;
-    }
-}
-
-@media screen and (max-width: 900px) and (min-width: 500px) {
-    .title{
-        background-color: rgb(255, 255, 255);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-
-
-@media screen and (max-width: 1600px) and (min-width: 900px) {
-    .workspace{
-        background-color: white;
-        display: grid;
-        grid-template-rows: 1fr 15fr;
-        z-index: 10;
-    }
-}
-
-@media screen and (max-width: 1600px) and (min-width: 900px) {
-    .title{
-        background-color: rgb(255, 255, 255);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-
-
-
-
-@media screen and (max-width: 1600px) and (min-width: 1200px) {
-    .workspace{
-        background-color: white;
-        display: grid;
-        grid-template-rows: 1fr 15fr;
-        z-index: 10;
-    }
-}
-
-@media screen and (max-width: 1600px) and (min-width: 1200px) {
+@media screen and (max-width: 1600px) and (min-width: 100px) {
     .title{
         background-color: rgb(255, 255, 255);
         display: flex;
