@@ -29,6 +29,9 @@
     #toolbutton3{
         background-color: #045a8d;
     }
+    #toolbutton1:hover, #toolbutton2:hover, #toolbutton3:hover{
+        background-color: rgba(53, 36, 36, 0.788);
+    }
 }
 
 
@@ -63,6 +66,9 @@
     }
     #toolbutton3{
         background-color: #045a8d;
+    }
+    #toolbutton1:hover, #toolbutton2:hover, #toolbutton3:hover{
+        background-color: rgba(53, 36, 36, 0.788);
     }
 }
 
