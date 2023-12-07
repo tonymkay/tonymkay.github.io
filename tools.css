@@ -100,17 +100,21 @@
         height: 40px;
     
     }
-    #toolbutton1{
-        background-color: #3690c0;
-    }
-    #toolbutton2{
-        background-color: #02818a;
-    }
-    #toolbutton3{
-        background-color: #6a51a3;
-    }
-    #toolbutton1:hover, #toolbutton2:hover, #toolbutton3:hover{
-        background-color: rgba(53, 36, 36, 0.788);
-    }
     
+}
+
+#toolbutton1 {
+    background-color: #3690c0;
+}
+
+#toolbutton2 {
+    background-color: #02818a;
+}
+
+#toolbutton3 {
+    background-color: #6a51a3;
+}
+
+#toolbutton1:hover, #toolbutton2:hover, #toolbutton3:hover {
+    background-color: rgba(53, 36, 36, 0.788);
 }
