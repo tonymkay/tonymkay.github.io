@@ -1,89 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WonderMap V2</title>
-    <link rel="stylesheet" href="general.css">
-    <link rel="stylesheet" href="sidebar.css">
-    <link rel="stylesheet" href="workspace.css">
-    <link rel="stylesheet" href="tools.css">
-    <link rel="stylesheet" href="legend.css">
-
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-
-    <link rel="stylesheet" href="https://unpkg.com/leaflet-search/dist/leaflet-search.min.css" />
-    <script src="https://unpkg.com/leaflet-search/dist/leaflet-search.min.js"></script>
-
-    <!-- Leaflet Control Geocoder CSS and JavaScript files -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder@1.13.0/dist/Control.Geocoder.css">
-    <script src="https://unpkg.com/leaflet-control-geocoder@1.13.0/dist/Control.Geocoder.js"></script>
-
-    <!-- Leaflet.draw CSS and JavaScript -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.css" />
-    <script src="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+    <title>Login-WonderMap</title>
 </head>
-<body id="body">
-    <section class="section">
-        <nav class="sidebar">
-            <div class="logo"><img src="images/wmplogo.svg" alt="" width="80px"></div>
-            <button class="side_buttons">&#43; New Map</button>
-            <button class="side_buttons">Projects</button>
-            <button class="side_buttons">&#43; New Map</button>
-            <div class="profile">
-                <img src="images/tony.jpg" alt="">
-                <h5>Antony Murimi</h5>
-            </div>
-        </nav>
-        <div class="wrapper">
-            <div class="tools">
-                <div class="tools_panel">
-                    <button id="toolbutton1" onclick="startDrawingPoint()"><img  class="legend-icon" src="icons/marker.png" alt="">Point</button>
-                    <button id="toolbutton1" onclick="startDrawingPoint()"><img  class="legend-icon" src="icons/marker.png" alt="">Point</button>
-                    <button id="toolbutton1" onclick="startDrawingTree()"><img  class="legend-icon" src="icons/tree.png" alt="">Tree</button>
-                    <button id="toolbutton1" onclick="startDrawingHospital()"><img class="legend-icon" src="icons/hospital.png" alt="">Hospital</button>
-                    <button id="toolbutton1" onclick="startDrawingChurch()"><img class="legend-icon" src="icons/church.png" alt="">Church</button>
-                    <button id="toolbutton1" onclick="startDrawingMosque()"><img class="legend-icon" src="icons/mosque.png" alt="">Mosque</button>
-                    <button id="toolbutton1" onclick="startDrawingPolice()"><img class="legend-icon" src="icons/police.png" alt="">Police</button>
-                    <button id="toolbutton1" onclick="startDrawingStore()"><img class="legend-icon" src="icons/store.png" alt="">Store</button>
-                    <button id="toolbutton1" onclick="startDrawingAirport()"><img  class="legend-icon" src="icons/airplane.png" alt="">Airport</button>
-                </div>
-                <div class="tools_panel">
-                    <button id="toolbutton2" onclick="startDrawingHighway()"><img  class="legend-icon" src="icons/highway.png" alt="">Highway</button>
-                    <button id="toolbutton2" onclick="startDrawingRoad()"><img  class="legend-icon" src="icons/road.png" alt="">Road</button>
-                    <button id="toolbutton2" onclick="startDrawingTrack()"><img  class="legend-icon" src="icons/track.png" alt="">Track</button>
-                    <button id="toolbutton2" onclick="startDrawingRiver()"><img  class="legend-icon" src="icons/river.png" alt="">River</button>
-                    <button id="toolbutton2" onclick="startDrawingRailway()"><img  class="legend-icon" src="icons/railway.png" alt="">RailWay</button>
-                    <button id="toolbutton2" onclick="startDrawingBoundary()"><img  class="legend-icon" src="icons/boundary.png" alt="">Boundary</button>
-                    <button id="toolbutton2" onclick="startDrawingBoundary()">on test</button>
-                    <button id="toolbutton2" onclick="startDrawingBoundary()">on test</button>
-                    <button id="toolbutton2" onclick="startDrawingBoundary()">on test</button>
-                </div>
-                <div class="tools_panel">
-                    <button id="toolbutton3" onclick="startDrawingPolygon()">Polygon</button>
-                    <button id="toolbutton3" onclick="startDrawingPolygon()">Polygon</button>
-                    <button id="toolbutton3" onclick="startDrawingPolygon()">Polygon</button>
-                    <button id="toolbutton3" onclick="startDrawingPolygon()">Polygon</button>
-                    <button id="toolbutton3" onclick="startDrawingPolygon()">Polygon</button>
-                    <button id="toolbutton3" onclick="startDrawingPolygon()">Polygon</button>
-                    <button id="toolbutton3" onclick="startDrawingPolygon()">Polygon</button>
-                    <button id="toolbutton3" onclick="startDrawingPolygon()">Polygon</button>
-                    <button id="toolbutton3" onclick="startDrawingPolygon()">Polygon</button>
-                </div>
-            </div>
-            <div class="workspace">
-                <div class="title">Name the Map</div>
-                <div id="map"></div>
-            </div>
-            <div id="legend"></div>
-        </div>
-    </section>
 
-    <script src="./script.js"></script>
-    <script src="./draw.js"></script>
-    <script src="./legen.js"></script>
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <div class="form">
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <input id="sign-up-name" type="text" placeholder="Name">
+                <input id= "sign-up-email" type="email" placeholder="Email">
+                <input id= "sign-up-password" type="password" placeholder="Password">
+                <button id= "user-sign-up">Sign Up</button>
+            </div>
+        </div>
+        <div class="form-container sign-in">
+            <div class="form">
+                <h1>Sign In</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email and password</span>
+                <input id="sign-in-email" type="email" placeholder="Email">
+                <input id="sign-in-password" type="password" placeholder="Password">
+                <a href="#">Forget Your Password?</a>
+                <button id="user-sign-in">Sign In</button>
+            </div>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Hello Mapper!</h1>
+                    <p> Already registered? Click to login</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Welcome Back!</h1>
+                    <p>Do not have a wondermap Account? <br> Click to create</p>
+                    <button class="hidden" id="register">Create Account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
 </body>
 
 </html>

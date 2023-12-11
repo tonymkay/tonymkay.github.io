@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mapname.css">
+    <title>Map Details</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container">
+            <div class="parameters">
+                <h1>Map Details</h1>
+                <span>Fill in the map name to proceed</span>
+                <input id="map-name" type="text" placeholder="Name the Map">
+                <span>Load data (optional)</span>
+                <input id="browse_data" type="file" accept=".shp, .json, .css">
+                <button id="proceed_button">Proceed</button>
+            </div>
+            <div id="map"> <img src="/images/cover_map.png" alt=""></div>
+        </div>
+        
+    <script src="mapname.js"></script>
+</body>
+</html>
