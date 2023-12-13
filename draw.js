@@ -55,6 +55,7 @@ function startDrawingAirport() {
     addLegendItem('icons/airplane.png', 'Airport');
 }
 
+
 function startDrawingHighway() {
     startDrawingMarker('icons/highway.png');
     addLegendItem('icons/highway.png', 'Highway');
@@ -71,8 +72,8 @@ function startDrawingHighway() {
 }
 
 function startDrawingRoad() {
-    startDrawingMarker('icons/highway.png');
-    addLegendItem('icons/highway.png', 'Highway');
+    startDrawingMarker('icons/road.png');
+    addLegendItem('icons/road.png', 'Road');
     // draw polyline functionality
     drawControl.setDrawingOptions({
         polyline: {
@@ -87,7 +88,7 @@ function startDrawingRoad() {
 
 function startDrawingTrack() {
     startDrawingMarker('icons/track.png');
-    addLegendItem('icons/track.png', 'Highway');
+    addLegendItem('icons/track.png', 'Track');
     // draw polyline functionality
     drawControl.setDrawingOptions({
         polyline: {
@@ -117,14 +118,14 @@ function startDrawingRiver() {
 }
 
 function startDrawingRailway() {
-    startDrawingMarker('icons/highway.png');
-    addLegendItem('icons/highway.png', 'Highway');
+    startDrawingMarker('icons/railway.png');
+    addLegendItem('icons/railway.png', 'Railway');
     // draw polyline functionality
     drawControl.setDrawingOptions({
         polyline: {
             shapeOptions: {
                 color: 'brown',
-                dashArray: '5, 10', // Adjust the dash array as needed (e.g., '5, 10' means 5 pixels on, 10 pixels off)
+                dashArray: '5, 5, 2', // Adjust the dash array as needed (e.g., '5, 10' means 5 pixels on, 10 pixels off)
             },
         },
     });
@@ -132,6 +133,8 @@ function startDrawingRailway() {
 }
 
 function startDrawingBoundary() {
+    startDrawingMarker('icons/boundary.png');
+    addLegendItem('icons/boundary.png', 'Boundary');
     // draw polyline functionality
     drawControl.setDrawingOptions({
         polyline: {
@@ -146,8 +149,78 @@ function startDrawingBoundary() {
 }
 
 
-function startDrawingPolygon() {
+function startDrawingForest() {
+    addLegendItem('icons/boundary.png', 'Forest');
     // draw polygon functionality
-    drawControl.setDrawingOptions({ polygon: {} });
+    drawControl.setDrawingOptions({ 
+        polygon: {
+            shapeOptions: {
+                color: 'green',
+                fillColor: 'green'
+            }
+
+        } 
+    });
+    drawControl._toolbars.draw._modes.polygon.handler.enable();
+}
+
+function startDrawingLake() {
+    addLegendItem('icons/boundary.png', 'Lake');
+    // draw polygon functionality
+    drawControl.setDrawingOptions({ 
+        polygon: {
+            shapeOptions: {
+                color: 'blue',
+                fillColor: 'blue'
+            }
+
+        } 
+    });
+    drawControl._toolbars.draw._modes.polygon.handler.enable();
+}
+
+function startDrawingPond() {
+    addLegendItem('icons/boundary.png', 'Pond');
+    // draw polygon functionality
+    drawControl.setDrawingOptions({ 
+        polygon: {
+            shapeOptions: {
+                color: 'lightblue',
+                fillColor: 'lightblue'
+            }
+
+        } 
+    });
+    drawControl._toolbars.draw._modes.polygon.handler.enable();
+}
+
+function startDrawingPark() {
+    addLegendItem('icons/boundary.png', 'Park');
+    // draw polygon functionality
+    drawControl.setDrawingOptions({ 
+        polygon: {
+            shapeOptions: {
+                color: 'darkgreen',
+                fillColor: 'darkgreen'
+            }
+
+        } 
+    });
+    drawControl._toolbars.draw._modes.polygon.handler.enable();
+}
+
+function startDrawingFence() {
+    addLegendItem('icons/boundary.png', 'Fence');
+    // draw polygon functionality
+    drawControl.setDrawingOptions({ 
+        polygon: {
+            shapeOptions: {
+                color: 'black',
+                fillColor: 'transparent',
+                weight: 2,
+            }
+
+        } 
+    });
     drawControl._toolbars.draw._modes.polygon.handler.enable();
 }
