@@ -1,11 +1,19 @@
 
 // Initialize the map with zoomControl set to false
-var map = L.map('map').setView([1.2921, 36.8219], 6);
+var map = L.map('map').setView([-1.286389, 36.817223], 12);
 
-// Add a tile layer (OpenStreetMap)
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
+/*L.tileLayer('http://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}',{
+        maxZoom: 20,
+       subdomains:['mt0','mt1','mt2','mt3']
+}).addTo(map); */
+
+
+ L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+   attribution: '© CartoDB',
+   subdomains: 'abcd',
+    maxZoom: 19
+}).addTo(map); 
+
 
 
 

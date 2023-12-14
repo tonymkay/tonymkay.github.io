@@ -150,7 +150,8 @@ function startDrawingBoundary() {
 
 
 function startDrawingForest() {
-    addLegendItem('icons/boundary.png', 'Forest');
+    startDrawingMarker('icons/forest.png');
+    addLegendItem('icons/forest.png', 'Forest');
     // draw polygon functionality
     drawControl.setDrawingOptions({ 
         polygon: {
@@ -165,7 +166,8 @@ function startDrawingForest() {
 }
 
 function startDrawingLake() {
-    addLegendItem('icons/boundary.png', 'Lake');
+    startDrawingMarker('icons/lake.png');
+    addLegendItem('icons/lake.png', 'Lake');
     // draw polygon functionality
     drawControl.setDrawingOptions({ 
         polygon: {
@@ -180,7 +182,8 @@ function startDrawingLake() {
 }
 
 function startDrawingPond() {
-    addLegendItem('icons/boundary.png', 'Pond');
+    startDrawingMarker('icons/pond.png');
+    addLegendItem('icons/pond.png', 'Pond');
     // draw polygon functionality
     drawControl.setDrawingOptions({ 
         polygon: {
@@ -195,7 +198,8 @@ function startDrawingPond() {
 }
 
 function startDrawingPark() {
-    addLegendItem('icons/boundary.png', 'Park');
+    startDrawingMarker('icons/park.png');
+    addLegendItem('icons/park.png', 'Park');
     // draw polygon functionality
     drawControl.setDrawingOptions({ 
         polygon: {
@@ -210,7 +214,8 @@ function startDrawingPark() {
 }
 
 function startDrawingFence() {
-    addLegendItem('icons/boundary.png', 'Fence');
+    startDrawingMarker('icons/fence.png');
+    addLegendItem('icons/fence.png', 'Fence');
     // draw polygon functionality
     drawControl.setDrawingOptions({ 
         polygon: {

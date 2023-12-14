@@ -50,6 +50,9 @@ body{
     margin-top: 10px;
     cursor: pointer;
 }
+.container button:hover{
+    background-color: #6b3cd8;
+}
 
 .container .parameters{
     background-color: #fff;

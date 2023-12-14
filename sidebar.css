@@ -29,9 +29,10 @@
     justify-content: center;
     padding-top: 20px;
     cursor: pointer;
+    margin: 40px 10px 40px 10px;
 }
 .logo img{
-    width: 60px;
+    width: 150px;
 }
 .side_buttons{
     border: 0;

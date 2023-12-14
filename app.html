@@ -28,7 +28,7 @@
 <body id="body">
     <section class="section">
         <nav class="sidebar">
-            <div class="logo" id="logo"><img src="images/wmplogo.svg" alt="" width="80px"></div>
+            <div class="logo" id="logo"><img src="images/wmplogo.png" alt="" ></div>
             <button class="side_buttons" id="sidebutton1">&#43; New Map</button>
             <button class="side_buttons" id="sidebutton2">Projects</button>
             <button class="side_buttons" id="sidebutton3">Tutorials</button>
@@ -62,11 +62,11 @@
                     <button id="toolbutton2" onclick="startDrawingBoundary()">on test</button>
                 </div>
                 <div class="tools_panel">
-                    <button id="toolbutton3" onclick="startDrawingForest()">Forest</button>
-                    <button id="toolbutton3" onclick="startDrawingLake()">Lake</button>
-                    <button id="toolbutton3" onclick="startDrawingPond()">Pond</button>
-                    <button id="toolbutton3" onclick="startDrawingPark()">Park</button>
-                    <button id="toolbutton3" onclick="startDrawingFence()">Fence</button>
+                    <button id="toolbutton3" onclick="startDrawingForest()"><img class="legend-icon" src="icons/forest.png" alt="">Forest</button>
+                    <button id="toolbutton3" onclick="startDrawingLake()"><img class="legend-icon" src="icons/lake.png" alt="">Lake</button>
+                    <button id="toolbutton3" onclick="startDrawingPond()"><img class="legend-icon" src="icons/pond.png" alt="">Pond</button>
+                    <button id="toolbutton3" onclick="startDrawingPark()"><img class="legend-icon" src="icons/park.png" alt="">Park</button>
+                    <button id="toolbutton3" onclick="startDrawingFence()"><img class="legend-icon" src="icons/fence.png" alt="">Fence</button>
                     <button id="toolbutton3" onclick="startDrawingPolygon()">Polygon</button>
                     <button id="toolbutton3" onclick="startDrawingPolygon()">Polygon</button>
                     <button id="toolbutton3" onclick="startDrawingPolygon()">Polygon</button>
@@ -77,7 +77,10 @@
                 <div class="title" id="title">Loading....</div>
                 <div id="map"></div>
             </div>
-            <div id="legend"></div>
+            <div class="legend_container"> <h4>Legend</h4>
+                <div id="legend"></div>
+            </div>
+            
         </div>
     </section>
 
