@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
+    <!-- Add this script tag to include the html2canvas library -->
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+
     <link rel="stylesheet" href="https://unpkg.com/leaflet-search/dist/leaflet-search.min.css" />
     <script src="https://unpkg.com/leaflet-search/dist/leaflet-search.min.js"></script>
 
@@ -37,7 +41,7 @@
                 <h5 id="user-name">Loading...</h5>
             </div>
         </nav>
-        <div class="wrapper">
+        <div class="wrapper" id="wrapper">
             <div class="tools">
                 <div class="tools_panel">
                     <button id="toolbutton1" onclick="startDrawingPoint()"><img class="legend-icon" src="icons/marker.png" alt="">Point</button>
@@ -73,20 +77,25 @@
                     <button id="toolbutton3" onclick="startDrawingPolygon()">Polygon</button>
                 </div>
             </div>
-            <div class="workspace">
-                <div class="title" id="title">Loading....</div>
+            <div class="workspace" id="workspace">
+                <div class="title-container" id="title-container">
+                    <div id="title" class="title">Loading...</div>
+                    <button id="save-button">Save</button>
+                </div>
                 <div id="map"></div>
-            </div>
-            <div class="legend_container"> <h4>Legend</h4>
-                <div id="legend"></div>
+                <div class="legend_container"> <h4>Legend</h4>
+                    <div id="legend"></div>
+                </div>
             </div>
             
+       
         </div>
     </section>
 
     <script src="./script.js"></script>
     <script src="./draw.js"></script>
     <script src="./legen.js"></script>
+    <script src="./save.js"></script>
 </body>
 
 </html>

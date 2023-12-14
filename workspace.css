@@ -1,17 +1,30 @@
-@media screen and (max-width: 1600px) and (min-width: 100px) {
-    .workspace{
-        background-color: white;
-        display: grid;
-        grid-template-rows: 1fr 15fr;
-        z-index: 10;
-    }
+.workspace{
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 10fr 6fr;
+    z-index: 10;
 }
-
-@media screen and (max-width: 1600px) and (min-width: 100px) {
-    .title{
-        background-color: rgb(255, 255, 255);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+.title-container{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    text-align: center;
+    width: 90%;
+}
+#save-button{
+    background-color:rgb(7, 158, 204);
+    color: white;
+    outline: none;
+    border: none;
+    padding: 10px 50px;
+}
+#save-button:hover{
+    background-color: rgb(58, 15, 22);
+    cursor: pointer;
+}
+#map{
+    height: 400px;
 }
