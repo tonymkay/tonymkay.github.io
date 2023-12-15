@@ -9,13 +9,13 @@ var map = L.map('map').setView([-1.286389, 36.817223], 12);
 
 
  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-   attribution: '© CartoDB',
+   attribution: '© Carto DB',
    subdomains: 'abcd',
     maxZoom: 19
 }).addTo(map); 
 
 
-
+L.control.scale().addTo(map);
 
 // Initializing Leaflet.draw control
 var drawnItems = new L.FeatureGroup();
